@@ -101,8 +101,8 @@ body{
     white-space: nowrap;
 }
 .btn:hover{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 .hidden{
     display: none!important;
@@ -121,7 +121,7 @@ body{
     padding: 30px;
 }
 .aside .logo{
-    padding: 30px 0px;
+    padding: 30px 0;
 }
 .aside .nav-toggler{
     height: 40px;
@@ -166,7 +166,7 @@ body{
 }
 .aside .nav{
     list-style: none;
-    margin: 80px 0px;
+    margin: 80px 0;
     padding: 0;
 }
 .aside .nav li{
@@ -222,8 +222,6 @@ body{
     bottom: 0;
     right: 0;
 }
-
-
 
 /* Home */
 .home{
@@ -333,11 +331,76 @@ body{
     margin-right: 15px;
     margin-top: 10px;
 }
-
 .about .about-content .skills{
-    /*background-color: blue;*/
     -ms-flex:0 0 40%;
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
+}
+.about .about-content .skills .skill-item{
+    -ms-flex:0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin: 0;
+}
+.about .about-content .skills .skill-item .progress{
+    background-color: #e3e3e3;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+}
+.about .about-content .skills .skill-item .skill-percent{
+    /*display: none;*/
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    color: #302e4d;
+    top: -40px;
+    font-weight: 400;
+}
+.about .about-content .education{
+    -ms-flex:0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content .experience{
+    -ms-flex:0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #302e4d;
+}
+.about .about-content .timeline-box{
+    -ms-flex:0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline{
+    background-color: #fdf9ff;
+    padding: 30px 15px;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    width: 100%;
 }
