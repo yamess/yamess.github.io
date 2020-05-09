@@ -1,3 +1,14 @@
-$(document).getElementsByClassName('.wrapper .sidebar ul li').hover(function() {
-    $(".wrapper .sidebar ul li a .fas").toggleClass('.wrapper .sidebar ul li a .fas:hover')
-})
+// Portfolio Item filter
+const filterContainer=document.querySelector(".portfolio-filter"),
+    filterBtns=filterContainer.children,
+    totalFilterBtn=filterBtns.length,
+    portfolioItems=document.querySelector(".portfolio-items").children;
+    totalPortfolioItem=portfolioItems.length
+console.log(totalPortfolioItem)
+
+    for(let i=0; i<totalFilterBtn; i++){
+        filterBtns[i].addEventListener("click", function () {
+            filterContainer.querySelector(".active").classList.remove("active")
+            this.classList.add("active");
+        })
+    }
