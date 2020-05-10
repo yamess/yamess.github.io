@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Template css files -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
     <link rel="stylesheet" title="pink" href="css/skins/pink.css" type="text/css">
 
 <!--    Live Style Switcher - Demo-->
@@ -663,15 +664,32 @@
 
 <!--    Live Style Switcher - Demo-->
     <div class="style-switcher">
-
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light">
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+        </label>
     </div>
 <!--    Live Style Switcher End-->
 
 <!--    Template js-->
     <script src="js/script.js"></script>
 <!--    Template js End-->
+<!--    Live Style js - Demo-->
+    <script src="js/styleSwitcher.js"></script>
 
-<!--    Lightbox End-->
+<!--    Light box End-->
     <script src="https://kit.fontawesome.com/cce8e12187.js" crossorigin="anonymous"></script>
 </body>
 </html>
