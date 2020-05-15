@@ -165,3 +165,8 @@
             allSection[i].classList.toggle("open")
         }
     }
+
+    // Email sender
+    function emailSender() {
+
+    }
